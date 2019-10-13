@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Monsterarrt";
+  src: URL("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Monsterarrt";
+  font-size: 22px;
+}
+.container-narrow {
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
+  position: absolute;
+  right: 10%;
+  left : 10%;
+  background-image: url(./images/cream_dust.png);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+img {
+  height: 150px;
+  width: 100px;
+}
+.card {
+  width: 200px;
+  float: left;
+}
+/*.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    -o-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}*/
+.card-content {
+  text-align: center;
+  font-weight: bold;
+}
