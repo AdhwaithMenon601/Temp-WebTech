@@ -18,6 +18,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  border-radius: 15px;
 }
 main {
   flex: 1 0 auto;
@@ -30,6 +31,7 @@ img {
   left: 9.5%;
   width: 200px;
   float: left;
+  border-radius: 15px;
 }
 
 
