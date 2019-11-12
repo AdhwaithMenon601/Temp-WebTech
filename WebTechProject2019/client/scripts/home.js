@@ -5,11 +5,11 @@ function change(event) {
     var myobj = event.target;
     if (myobj.textContent == "add") {
         myobj.textContent = "edit";
-        localStorage.setItem('PC_check',true);
+        sessionStorage.setItem('PC_check',true);
     }
 }
 function check() {
-    var chk = localStorage.getItem('PC_check');
+    var chk = sessionStorage.getItem('PC_check');
     console.log(chk);
     if (chk) {
         var ob = document.getElementById('bt');

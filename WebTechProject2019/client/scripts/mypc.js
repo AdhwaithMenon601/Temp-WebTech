@@ -1,8 +1,16 @@
 window.addEventListener('load',printValue);
 //Using global variables for now
-var sockAr = [];
+let sockCpu = 0;
+let sockGpu = 0;
+let sockMoth = 0;
+let sockDisk = 0;
+let sockPow = 0;
+
+
 //
 function printValue() {
+    const t = document.getElementById("ale");
+    t.style.display = "none";
     var qrstring = decodeURIComponent(window.location.search);
     if (qrstring === '') {
         printCpu('test','test','test');
@@ -37,7 +45,7 @@ function printCpu(typ,nm,sock) {
     if (typ === 'CPU') {
         const domProc = document.getElementById("cpu");
         domProc.children[0].textContent = nm;
-        sockAr.push(sock);
+        sockCpu = sock;
         sessionStorage.setItem('CPU-N',nm);
         sessionStorage.setItem('CPU-S',sock);
     }
@@ -58,7 +66,7 @@ function printGpu(typ,nm,sock) {
     if (typ === 'GPU') {
         const domProc = document.getElementById("gpu");
         domProc.children[0].textContent = nm;
-        sockAr.push(sock);
+        sockGpu = sock;
         sessionStorage.setItem('GPU-N',nm);
         sessionStorage.setItem('GPU-S',sock);
     }
@@ -79,7 +87,7 @@ function printMoth(typ,nm,sock) {
     if (typ === 'Moth') {
         const domProc = document.getElementById("moth");
         domProc.children[0].textContent = nm;
-        sockAr.push(sock);
+        sockMoth = sock;
         sessionStorage.setItem('Moth-N',nm);
         sessionStorage.setItem('Moth-S',sock);
     }
@@ -99,7 +107,7 @@ function printDisk(typ,nm,sock) {
     if (typ === 'Disk') {
         const domProc = document.getElementById("disk");
         domProc.children[0].textContent = nm;
-        sockAr.push(sock);
+        sockDisk = sock;
         sessionStorage.setItem('Disk-N',nm);
         sessionStorage.setItem('Disk-S',sock);
     }
@@ -119,7 +127,7 @@ function printPower(typ,nm,sock) {
     if (typ === 'Power') {
         const domProc = document.getElementById("power");
         domProc.children[0].textContent = nm;
-        sockAr.push(sock);
+        sockPow = sock;
         sessionStorage.setItem('Power-N',nm);
         sessionStorage.setItem('Power-S',sock);
     }
@@ -132,5 +140,36 @@ function printPower(typ,nm,sock) {
             new_nm = "Power";
         }
         domProc.children[0].textContent = new_nm;
+    }
+}
+
+function checkComp() {
+    let sock1 = sessionStorage.getItem('CPU-S');
+    let sock2 = sessionStorage.getItem('GPU-S');
+    let sock3 = sessionStorage.getItem('Moth-S');
+    let sock4 = sessionStorage.getItem('Disk-S');
+    let sock5 = sessionStorage.getItem('Power-S');
+    const t = document.getElementById("ale");
+    const aler = t.children[1];
+    var isComp = true;
+    const al = document.getElementById("al");
+    var ar = [sock1,sock2,sock3,sock4,sock5];
+    var temp = ar[0];
+    for (var i = 0; i < 5; i++) {
+        console.log(ar[i]);
+        if (temp !== ar[i]) {
+            isComp = false;
+            break;
+        }
+    }
+    if(isComp) {
+        t.style.backgroundColor = "#66CD00";
+        t.style.display = "block";
+        aler.textContent = "Congrats!! It is compatable!!";
+    }
+    else {
+        t.style.display = "block";
+        t.style.backgroundColor = "#f44336";
+        aler.textContent = "Oops!! It is incompatable!!";
     }
 }
