@@ -70,3 +70,12 @@ img {
 .closebtn:hover {
   color: black;
 }
+
+.form-lab {
+  color: black;
+  font-size: 110%;
+}
+
+.my-cent {
+  right: 200%;
+}

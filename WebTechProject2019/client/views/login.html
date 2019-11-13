@@ -42,9 +42,7 @@
             ></a>
             <!-- RIGHT NAV -->
             <ul class="right hide-on-small-only">
-              <li>
-                
-              </li>
+              <li></li>
             </ul>
             <!-- SIDE MENU -->
             <ul class="side-nav" id="main-menu">
@@ -78,7 +76,9 @@
                 >
               </li>
               <li>
-                <a href="power.html"><i class="material-icons">power</i>Power Supply</a>
+                <a href="power.html"
+                  ><i class="material-icons">power</i>Power Supply</a
+                >
               </li>
             </ul>
           </div>
@@ -88,103 +88,30 @@
     <br />
     <div class="container-narrow">
       <main>
-        <div class="center"><h2>My PC</h2><hr><h4>Please select the parts</h4></div>
-        
-        <div class="row justify-content-center">
-          <div class="col s10 m3">
-            <div class="card">
-              <div class="card-image">
-                <img src="../public/images/inteli5.jpeg" />
-                <a class="btn-floating halfway-fab waves-effect waves-light red"
-                href="cpu.html"><i class="material-icons">add</i></a
-                >
-              </div>
-              <div class="card-content" id="cpu">
-                <p>
-                  Processor
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s10 m3">
-            <div class="card">
-              <div class="card-image">
-                <img src="../public/images/inteli5.jpeg" />
-                <a class="btn-floating halfway-fab waves-effect waves-light red"
-                    href="gpu.html">
-                  <i class="material-icons">add</i></a
-                >
-              </div>
-              <div class="card-content" id="gpu">
-                <p>
-                  GPU
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s10 m3">
-            <div class="card">
-              <div class="card-image">
-                <img src="../public/images/inteli5.jpeg" />
-                <a class="btn-floating halfway-fab waves-effect waves-light red"
-                href="disk.html"><i class="material-icons">add</i></a
-                >
-              </div>
-              <div class="card-content" id="disk">
-                <p>
-                  Hard Disk
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s10 m3">
-            <div class="card">
-              <div class="card-image">
-                <img src="../public/images/inteli5.jpeg" />
-                <a class="btn-floating halfway-fab waves-effect waves-light red"
-                href="motherboards.html"><i class="material-icons">add</i></a
-                >
-              </div>
-              <div class="card-content" id="moth">
-                <p>
-                  Motherboard
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s10 m3">
-            <div class="card" id = "change">
-              <div class="card-image">
-                <img src="../public/images/inteli5.jpeg" />
-                <a class="btn-floating halfway-fab waves-effect waves-light red"
-                href="power.html"><i class="material-icons">add</i></a
-                >
-              </div>
-              <div class="card-content" id="power">
-                <p>
-                  Power 
-                </p>
-              </div>
-            </div>
-          </div>
-
+        <div class="my-cent center">
+          <h2>Login</h2>
         </div>
-        <hr>
-        <br/>
-        <br/>
-        <div class="center">
-          <button type="button" class="btn btn-success" onclick="checkComp()">Check Compatibility</button>
+        <br />
+
+        <div class="col" style="padding-left: 22%;">
+          <div class="col s10 m3" style=" left:20%;">
+            <div class="card center" style="width: 50%">
+              <div class="card-image"></div>
+              <div class="card-content">
+                <form>
+                    <label class="form-lab">Username</label>
+                    <input type="text" name="user">
+                    <br/>
+                    <label class="form-lab">Password</label>
+                    <input type="text" name="password">
+                    <br/><br/>
+                    <input class="btn red" type="submit" name="submit">
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <br/>
-        <div class="alert" id="ale">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-            <strong></strong>
-        </div>
-        <br/><br/>
+        <br />
       </main>
       <footer
         class="grey-text page-footer black darken-3"
@@ -198,7 +125,6 @@
         </div>
       </footer>
     </div>
-    <script src="../scripts/mypc.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
