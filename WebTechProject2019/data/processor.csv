@@ -1,5 +1,4 @@
-"name
-",core,frequency,socket,power,overclockable,ddr
+name,core,frequency,socket,power,overclockable,ddr
 i7-9700,8,3,LGA 1151,65,no,4
 i7-9700K,8,3.6,LGA 1151,95,yes,4
 i7-8700K,6,3.7,LGA 1151,95,yes,4
@@ -27,16 +26,10 @@ i3-9300,4,3.7,LGA 1151,62,no,4
 i3-9350K,4,4,LGA 1151,91,yes,4
 i3-8300,4,3.7,LGA 1151,65,no,4
 i3-8350K,4,4,LGA 1151,91,yes,4
-"Ryzen Threadripper 3970X
-",32,3.7,"sTRX4
-",280,yes,4
-"Ryzen Threadripper 3960X
-",24,3.8,"sTRX4
-",280,yes,4
-"Ryzen Threadripper 2970WX
-",24,3,TR4,250,yes,4
-"Ryzen Threadripper 2990WX
-",32,3,TR4,250,yes,4
+Ryzen Threadripper 3970X,32,3.7,sTRX4,280,yes,4
+Ryzen Threadripper 3960X,24,3.8,sTRX4,280,yes,4
+Ryzen Threadripper 2970WX,24,3,TR4,250,yes,4
+Ryzen Threadripper 2990WX,32,3,TR4,250,yes,4
 Ryzen 7 3800X,8,3.9,AM4,105,yes,4
 Ryzen 7 3700X,8,3.6,AM4,65,yes,4
 Ryzen 7 3700,8,3.6,AM4,65,yes,4

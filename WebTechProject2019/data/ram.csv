@@ -1,5 +1,4 @@
-company,"model
-",capacity,ddr
+company,model,capacity,ddr
 gskill,F4-3000C15D-16GVR,2x8,4
 kingston,HX429C17FW2/8,1x16,4
 gskill,F4-3200C16D-16GTZR,2x8,4
@@ -13,12 +12,10 @@ ballistix,BLT2K8G4D30BET4K,2x8,4
 gskill,F4-3200C16D-16GSX,2x8,4
 crucial,CT12864AA667,1x1,2
 corsair,CML16GX3M2A1600C10,2x8,3
-corsair,CMZ32GX3M4X1600C10,"4x8
-",3
+corsair,CMZ32GX3M4X1600C10,4x8,3
 corsair,CMV4GX3M2A1333C9,2x2,3
 gskill,F3-2133C9D-16GTX,2x8,3
-gskill,F3-1866C10Q-32GAB,"4x8
-",3
+gskill,F3-1866C10Q-32GAB,4x8,3
 gskill,F3-8500CL7Q-16GBRL,4x4,3
 corsair,CMZ16GX3M2A1600C10R,2x8,3
 patriot,PSD1G333,1x1,1

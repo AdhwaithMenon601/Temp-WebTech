@@ -1,5 +1,4 @@
-"company
-",name,model,base_company,power
+company,name,model,base_company,power
 msi,GTX 970 GAMING 4G,gtx 970,nvidia,145
 gigabyte,GV-N1070G1 GAMING-8GD,gtx 1070,nvidia,150
 msi,R9 390 GAMING 8G,r9 390,amd,275
@@ -16,16 +15,13 @@ asus,DUAL-RX480-O4G,rx 480,amd,150
 gigabyte,GV-N1060XTREME-6GD,gtx 1060,nvidia,120
 msi,R9 380 4GD5T OC,r9 380,amd,190
 msi,GeForce GTX 1070 Quick Silver 8G OC,gtx 1070,nvidia,150
-xfx,RX-460P4DFG5,"rx 460
-",amd,75
-asus,STRIX-R7370-DC2OC-4GD5-GAMING,"r7 370
-",amd,110
+xfx,RX-460P4DFG5,Rx 460,amd,75
+asus,STRIX-R7370-DC2OC-4GD5-GAMING,R7 370,amd,110
 msi,Radeon RX 470 GAMING X 8G,rx 470,amd,120
 msi,GTX 1050 Ti GAMING X 4G,gtx 1050ti,nvidia,75
 xfx,RX-470P437BM,rx 470,amd,120
 asus,TURBO-GTX1080-8G,gtx 1080,nvidia,180
-asus,STRIX-RX470-O4G-GAMING,"rx 470
-",amd,120
+asus,STRIX-RX470-O4G-GAMING,rx 470,amd,120
 powerColor,AXRX 480 8GBD5-3DHV2/OC,rx 480,amd,150
 asus,STRIX-GTX950-DC2OC-2GD5-GAMING,gtx 950,nvidia,80
 msi,RX 480 ARMOR 4G OC,rx 480,amd,150
