@@ -18,6 +18,7 @@ function printValue() {
         printMoth('test','test','test');
         printDisk('test','test','test');
         printPower('test','test','test');
+        printRam('test','test','test');
     }
     else {
         qrstring = qrstring.substring(1);
@@ -36,6 +37,7 @@ function printValue() {
         printDisk(typ,nm,sock);
         printMoth(typ,nm,sock);
         printPower(typ,nm,sock);
+        printRam(typ,nm,sock);
     }
 }
 //Functions for printing the cards
@@ -149,13 +151,14 @@ function checkComp() {
     let sock3 = sessionStorage.getItem('Moth-S');
     let sock4 = sessionStorage.getItem('Disk-S');
     let sock5 = sessionStorage.getItem('Power-S');
+    let sock6 = sessionStorage.getItem('RAM-S');
     const t = document.getElementById("ale");
     const aler = t.children[1];
     var isComp = true;
     const al = document.getElementById("al");
-    var ar = [sock1,sock2,sock3,sock4,sock5];
+    var ar = [sock1,sock2,sock3,sock4,sock5,sock6];
     var temp = ar[0];
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 6; i++) {
         console.log(ar[i]);
         if (temp !== ar[i]) {
             isComp = false;
@@ -171,5 +174,26 @@ function checkComp() {
         t.style.display = "block";
         t.style.backgroundColor = "#f44336";
         aler.textContent = "Oops!! It is incompatable!!";
+    }
+}
+function printRam(typ,nm,sock) {
+    var new_nm;
+    var new_sock;
+    if (typ === 'RAM') {
+        const domProc = document.getElementById("ram");
+        domProc.children[0].textContent = nm;
+        sockCpu = sock;
+        sessionStorage.setItem('RAM-N',nm);
+        sessionStorage.setItem('RAM-S',sock);
+    }
+    else {
+        const domProc = document.getElementById("ram");
+        new_nm = sessionStorage.getItem('RAM-N');
+        new_sock = sessionStorage.getItem('RAM-S');
+        console.log(new_nm);
+        if (new_nm === 'undefined' || new_nm === null) {
+            new_nm = "RAM";
+        }
+        domProc.children[0].textContent = new_nm;
     }
 }

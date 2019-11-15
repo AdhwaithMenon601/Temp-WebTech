@@ -14,7 +14,6 @@ function addItem(event) {
         };
         console.log(proc);
         var qrstring = "?type=RAM" + "?name=" + nm + "?sock=" + sock;
-        localStorage.setItem('CPU',proc);
         window.location.href = "mypc.html" + qrstring;
     }
 }

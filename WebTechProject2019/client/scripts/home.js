@@ -1,5 +1,7 @@
 window.addEventListener('load',check);
-document.addEventListener('click',change);
+var tp = document.getElementById("txt");
+
+tp.addEventListener('click',change);
 
 var temp = document.getElementById("login");
 temp.addEventListener('click',logout);
@@ -24,18 +26,24 @@ function check() {
         console.log(nm);
         if (nm === "user") {
             log.textContent = "Logout";
-            log.href = "home.html"+"?nuser=1";
+            log.href = "login.html"+"?nuser=1";
             sessionStorage.setItem('isUser',true);
         }
     }
     var chk = sessionStorage.getItem('PC_check');
     var us = sessionStorage.getItem('isUser');
+    var ob = document.getElementById('bt');
+    var pg = document.getElementById('txt');
+    pg.textContent = "Add new PC";
+    ob.textContent = "add";
     console.log(chk);
     if (chk && us) {
-        var ob = document.getElementById('bt');
         ob.textContent = "edit";
-        var pg = document.getElementById('txt');
         pg.textContent = "PC";
+    }
+    if (chk) {
+        var log = document.getElementById("login");
+        log.textContent = "Logout";
     }
 }
 function logout() {
