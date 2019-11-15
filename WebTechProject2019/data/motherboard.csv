@@ -1,0 +1,26 @@
+company,name,"socket
+",chipset,size
+asus,x99-Delux II,LGA 2011,x99,atx
+gigabyte,"ga-z170X-Designare
+",LGA 1151,x170,atx
+msi,b150 Mate,LGA 1151,b150,atx
+msi,z270 Gaming Pro Carbon,LGA 1151,z270,atx
+gigabyte,GA-H170-DS3H,LGA 1151,h170,atx
+asus,x99-E,"LGA 1151
+",z170,atx
+msi,"XPower Gaming Titanium
+",LGA 1151,x99,atx
+"asrock
+",z270m-itx/ac,LGA 1151,z270,mini itx
+gigabyte,ga-ab350m-Gaming,AM4,b350,micro atx
+"asrock
+",ab350 pro4 Promontory,AM4,b350,atx
+"asrock
+","Taichi Promontory
+",AM4,x370,atx
+msi,970a-g43,AM3,"sb960
+",atx
+gigabyte,dx4380,"AM3
+",a75,micro atx
+msi,b350m gaming pro,AM4,b370,micro atx
+asus,prime x370-pro,AM4,x370,atx

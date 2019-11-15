@@ -1,0 +1,48 @@
+"name
+",core,frequency,socket,power,overclockable,ddr
+i7-9700,8,3,LGA 1151,65,no,4
+i7-9700K,8,3.6,LGA 1151,95,yes,4
+i7-8700K,6,3.7,LGA 1151,95,yes,4
+i7-8700,6,3.2,LGA 1151,65,no,4
+i7-7700,4,3.6,LGA 1151,65,no,4
+i7-7700K,4,4.2,LGA 1151,91,yes,3
+i7-6700,4,3.4,LGA 1151,65,no,3
+i7-6700K,4,4,LGA 1151,91,yes,3
+i5-9600,6,3.1,LGA 1151,65,no,4
+i5-9600K,6,3.7,LGA 1151,95,yes,4
+i5-9500,6,3,LGA 1151,65,no,4
+i5-8600,6,3,LGA 1151,65,no,4
+i5-8600K,6,3.1,LGA 1151,65,yes,4
+i5-8400,6,2.8,LGA 1151,65,no,4
+i5-8500,6,3,LGA 1151,65,no,4
+i5-7400,4,3,LGA 1151,65,no,3
+i5-7500,4,3.4,LGA 1151,65,no,3
+i5-7600,4,3.5,LGA 1151,65,no,3
+i5-7600K,4,3.8,LGA 1151,91,yes,3
+i5-6400,4,2.7,LGA 1151,65,no,3
+i5-6500,4,3.2,LGA 1151,65,no,3
+i5-6600,4,3.3,LGA 1151,65,no,3
+i5-6600K,4,3.5,LGA 1151,91,yes,3
+i3-9300,4,3.7,LGA 1151,62,no,4
+i3-9350K,4,4,LGA 1151,91,yes,4
+i3-8300,4,3.7,LGA 1151,65,no,4
+i3-8350K,4,4,LGA 1151,91,yes,4
+"Ryzen Threadripper 3970X
+",32,3.7,"sTRX4
+",280,yes,4
+"Ryzen Threadripper 3960X
+",24,3.8,"sTRX4
+",280,yes,4
+"Ryzen Threadripper 2970WX
+",24,3,TR4,250,yes,4
+"Ryzen Threadripper 2990WX
+",32,3,TR4,250,yes,4
+Ryzen 7 3800X,8,3.9,AM4,105,yes,4
+Ryzen 7 3700X,8,3.6,AM4,65,yes,4
+Ryzen 7 3700,8,3.6,AM4,65,yes,4
+Ryzen 7 2700X,8,3.7,AM4,105,yes,4
+Ryzen 7 2700,8,3.2,AM4,65,yes,4
+Ryzen 5 3600X,6,3.8,AM4,95,yes,4
+Ryzen 5 3600,6,3.6,AM4,65,yes,4
+Ryzen 5 2600X,6,3.6,AM4,95,yes,4
+Ryzen 5 2600,6,3.1,AM4,65,yes,4

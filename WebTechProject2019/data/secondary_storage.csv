@@ -1,0 +1,25 @@
+company,model,capacity,interface
+hyperx,SH103S3B/120G,120,sata III
+mushkin enhanced,MKNSSDCL120GB-DX,120,sata III
+sandisk,SDSSDP-128G-G25,128,sata III
+mushkin enhanced,MKNSSDEC120GB,120,sata III
+mushkin enhanced,MKNSSDEC240GB,240,sata III
+samsung,MZ-V5P256BW,256,pcie
+mushkin enhanced,MKNSSDCR240GB-DX,240,sata III
+pny,SSD7SC240GOPT-RB,240,sata III
+samsung,MZ-7TE1T0BW,1000,sata III
+mushkin enhanced,MKNSSDRE1TB,1000,sata III
+mushkin enhanced,MKNSSDCR60GB,60,sata III
+samsung,MZ-V5P512BW,512,pcie
+silicon power,SP120GBSS3S60S25,120,sata III
+crucial,CT512MX100SSD1,512,sata III
+sandisk,SDSSDX-120G-G25,120,sata III
+crucial,CT256MX100SSD1,256,sata III
+samsung,MZ-7KE256BW,256,sata III
+crucial,CT128M4SSD2CCA,128,sata III
+samsung,MZ-7TD250BW,250,sata III
+crucial,CT240M500SSD1,240,sata III
+kingston,SV300S37A/240G,240,sata III
+samsung,MZ-7TE500BW,500,sata III
+crucial,CT256M4SSD2,256,sata III
+samsung,MZ-7TD120BW,120,sata III
