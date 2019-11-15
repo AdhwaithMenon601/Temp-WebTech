@@ -98,14 +98,14 @@
             <div class="card center" style="width: 50%">
               <div class="card-image"></div>
               <div class="card-content">
-                <form action="save.php" method="POST">
+                <form action="home.html" method="GET">
                     <label class="form-lab">Username</label>
                     <input type="text" name="user">
                     <br/>
                     <label class="form-lab">Password</label>
-                    <input type="text" name="password">
+                    <input type="password" name="password">
                     <br/><br/>
-                    <input class="btn red" type="submit" name="submit">
+                    <input id="login" class="btn red" type="submit" name="submit">
                 </form>
               </div>
             </div>
@@ -125,6 +125,7 @@
         </div>
       </footer>
     </div>
+    <script src="../scripts/login.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
