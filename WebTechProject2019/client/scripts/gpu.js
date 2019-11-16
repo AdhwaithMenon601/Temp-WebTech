@@ -4,7 +4,7 @@ document.addEventListener('click',addItem);
 function addItem(event) {
     const obj = event.target;
     if (obj.tagName == 'I') {
-        var sock;
+        var sock = 0
         const img = obj.parentElement.parentElement.children[0];
         const card = obj.parentElement.parentElement.parentElement.children[1];
         const my_im = obj.parentElement.parentElement.parentElement.children[0];
@@ -16,7 +16,7 @@ function addItem(event) {
             Socket : sock
         };
         console.log(proc);
-        var qrstring = "?type=GPU" + "?name=" + nm + "?sock=" + 0 + "?img=" + sent_im;
+        var qrstring = "?type=GPU" + "?name=" + nm + "?sock=" + sock + "?img=" + sent_im;
         window.location.href = "mypc.html" + qrstring;
     }
 }
