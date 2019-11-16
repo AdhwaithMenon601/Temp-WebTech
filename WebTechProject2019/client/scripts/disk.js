@@ -6,6 +6,8 @@ function addItem(event) {
     if (obj.tagName == 'I') {
         const img = obj.parentElement.parentElement.children[0];
         const card = obj.parentElement.parentElement.parentElement.children[1];
+        const my_im = obj.parentElement.parentElement.parentElement.children[0];
+        const sent_im = my_im.children[0].src;
         const nm = card.children[0].textContent;
         const sock = card.children[1].textContent;
         const proc = {
@@ -13,7 +15,7 @@ function addItem(event) {
             Socket : sock
         };
         console.log(proc);
-        var qrstring = "?type=Disk" + "?name=" + nm + "?sock=" + sock;
+        var qrstring = "?type=Disk" + "?name=" + nm + "?sock=" + 0 + "?img=" + sent_im;
         localStorage.setItem('CPU',proc);
         window.location.href = "mypc.html" + qrstring;
     }
