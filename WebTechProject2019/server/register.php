@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+<?php
+    $user = $_POST['user'];
+    $pass = $_POST['password1'];
+    //Database connection
+    $servername = "localhost";
+    $username = "id11632512_adhu601";
+    $password = "xxkxx212";
+    $databasename = "id11632512_userinfo";
+    $con = mysqli_connect($servername,$username,$password,$databasename);
+    if(!$con) {
+        die("Error : ".mysqli_connect_error);
+    }
+    $sql = "INSERT INTO `UserInfo` (`UserName`, `Password`) VALUES ('$user', '$password');";
+    if(mysqli_query($con,$sql)) {
+        echo "Registration Done";
+    }
+?>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="stylesheet" href="../client/public/styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Aclonica"
       rel="stylesheet"
@@ -47,41 +63,9 @@
             <!-- SIDE MENU -->
             <ul class="side-nav" id="main-menu">
               <li>
-                <a id="login" class="btn red darken-1" href="login.html"
+                <a id="login" class="btn red darken-1" href="../client/views/login.html"
                   ><i class="fa fa-google left"></i> Login With Google</a
                 >
-              </li>
-              <li>
-                <a href="./home.html"><i class="material-icons">home</i>Home</a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="motherboards.html"
-                  ><i class="material-icons">developer_board</i>Motherboards</a
-                >
-              </li>
-              <li>
-                <a href="cpu.html"
-                  ><i class="material-icons">memory</i>Processors</a
-                >
-              </li>
-              <li>
-                <a href="gpu.html"
-                  ><i class="material-icons">nfc</i>Graphics Card</a
-                >
-              </li>
-              <li>
-                <a href="disk.html"
-                  ><i class="material-icons">donut_large</i>Hard Disk</a
-                >
-              </li>
-              <li>
-                <a href="power.html"
-                  ><i class="material-icons">power</i>Power Supply</a
-                >
-              </li>
-              <li>
-                <a href="ram.html"><i class="material-icons">sd_storage</i>RAM</a>
               </li>
             </ul>
           </div>
@@ -92,28 +76,9 @@
     <div class="container-narrow">
       <main>
         <div class="center">
-          <i class="large material-icons">home</i>
+            <h1>User Registered</h1>
         </div>
         <br />
-
-        <div class="col" style="padding-left: 22%;">
-          <div class="col s10 m3" style=" left:20%;">
-            <div class="card center" style="width: 50%">
-              <div class="card-image">
-                <a
-                  class="btn-floating halfway-fab waves-effect waves-light red"
-                  href="mypc.html"
-                  ><i class="material-icons" id="bt">add</i></a
-                >
-              </div>
-              <div class="card-content">
-                <p id="txt">
-                  Add new PC
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         <br />
       </main>
       <footer
@@ -128,7 +93,6 @@
       </div>
     </footer>
     </div>
-    <script src="../scripts/home.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -138,16 +102,12 @@
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script>
-      $.backstretch("../public/images/game.jpeg");
+      $.backstretch("../client/public/images/game.jpeg");
     </script>
     <script>
       $(document).ready(() => {
         $(".button-collapse").sideNav();
       });
     </script>
-    <script>
-      localStorage.setItem('email', '<?php $_SESSION['email'];?>');  
-      localStorage.setItem('password', '<?php $_SESSION['password'];?>');
-      </script>
   </body>
 </html>

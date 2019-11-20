@@ -1,23 +1,28 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$username = "adhu";
+$password = "xxkxx212";
+$dbname = "User";
+//Create connection
+$conn = new mysqli($webtech, $adhu, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
+$user = $_REQUEST['user'];
+$pass = $_REQUEST['password'];
+//
+$sql = "SELECT id FROM admin WHERE username = '$user' and passcode = '$pass'";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+$active = $row['active'];
+$count = mysqli_num_rows($result);
+//
+if($count == 1) {
+    session_register("username");
+    $_SESSION['login_user'] = $user;
+    
+    header("location: home.php");
+ }else {
+    $error = "Your Login Name or Password is invalid";
+ }
