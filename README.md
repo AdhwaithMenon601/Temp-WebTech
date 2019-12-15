@@ -1,2 +1,1 @@
-# Temp-WebTech
-Basic layout for the web tech project 
+# Semester 3 Web-Technologies-1 project 
